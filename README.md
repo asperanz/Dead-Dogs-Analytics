@@ -1,4 +1,2 @@
-# hello-world
-Test Repository
-
-First step of a long run!
+# Dead Dogs Analytics
+Dead Dogs Youtube Channel Analysis
