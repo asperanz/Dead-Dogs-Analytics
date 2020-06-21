@@ -12,7 +12,7 @@ shinyUI(fluidPage(
     sidebarLayout(
         sidebarPanel(
             selectInput("year", 
-                        "Year of concert", 
+                        label = h4("Year of concert"), 
                         c("All",
                           unique(dd_concerts$year)))),
         mainPanel(
