@@ -11,10 +11,11 @@ shinyUI(fluidPage(
     # Sidebar with a slider input for number of bins
     sidebarLayout(
         sidebarPanel(
-            selectInput("year", 
-                        label = h4("Year of concert"), 
-                        c("All",
-                          unique(dd_concerts$year)))),
+            selectizeInput("year",
+                           label = h4("Year of concert"),
+                           choices = unique(dd_concerts$year),
+                           selected = NULL,
+                           multiple = TRUE)),
         mainPanel(
             leafletOutput("map")
         )
